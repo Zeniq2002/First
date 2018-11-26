@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class HurtObject : MonoBehaviour
 {
+    //om något nuddar den här och har tagen Player
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //Om något med tagen (Player) gör...
         if(collision.gameObject.tag == "Player")
         {
+            //Hämtar banan som PLayer är på just nu den är på.
             Scene active = SceneManager.GetActiveScene();
             SceneManager.LoadScene(active.name);
         }

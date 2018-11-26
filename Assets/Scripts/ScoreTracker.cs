@@ -6,7 +6,9 @@ using TMPro; //<- "namespace"
 
 public class ScoreTracker : MonoBehaviour
 {
+    //Den lenkar eller referear till en text
     public TextMeshProUGUI scoreText;
+
     public int totalScore;
 
     private void Update()

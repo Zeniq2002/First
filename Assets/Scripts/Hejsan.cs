@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Hejsan : MonoBehaviour
 {
+    //Ger ett name till LoadScene (Namnet är scenen som ska loada)
     public string levelToLoad = "NextLevel";
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //om Player colliderar så printar den Victory Royal och Loadar SampleScene 
+        //Om något med TAG;Player colliderar så Loadar SampleScene 
         if (collision.tag == "Player")
         {
             SceneManager.LoadScene(levelToLoad);

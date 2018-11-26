@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    //ger ett värde till score
+    //Ger ett värde till score
     public int score = 1;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //om PLayer colliderar med con destroy Coin
+        //Om PLayer colliderar med coin destroy Coin
         if (collision.tag == "Player")
         {
-            //skapa en temporär variabel "controller" och sätt den till
+            //Skapa en temporär variabel "controller" och sätt den till
             //resultatet av sökning efter objektet med taggen "GameController"
             GameObject controller = GameObject.FindWithTag("GameController");
             if (controller != null)
@@ -26,11 +26,13 @@ public class Coin : MonoBehaviour
                 }
                 else
                 {
+                    //Om scoreTracker saknas print i LogError att den saknas
                     Debug.LogError("ScoreTracker saknas på GameController");
                 }
             }
             else
             {
+                //Om Gamecontroller finns inte printa Gamecontroller finns inte i LogError
                 Debug.LogError("Gamecontroller finns inte.");
             }
 
