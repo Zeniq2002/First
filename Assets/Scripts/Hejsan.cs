@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class Hejsan : MonoBehaviour
 {
     //Ger ett name till LoadScene (Namnet är scenen som ska loada)
-    public string levelToLoad = "NextLevel";
+    public string levelToLoad = "Level2";
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Om något med TAG;Player colliderar så Loadar SampleScene 
+        //Om något med TAG;Player colliderar Gör LoadScene(LevelToLoad) 
         if (collision.tag == "Player")
         {
             SceneManager.LoadScene(levelToLoad);

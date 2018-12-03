@@ -20,8 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4713736476568032}
   - component: {fileID: 212457059220727450}
-  - component: {fileID: 114223143729375640}
   - component: {fileID: 60056381007175192}
+  - component: {fileID: 114223143729375640}
+  - component: {fileID: 114178108340594828}
   - component: {fileID: 114053908666035044}
   - component: {fileID: 50381837159399220}
   m_Layer: 0
@@ -113,6 +114,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 2
   isleft: 1
+--- !u!114 &114178108340594828
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1626875675531278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23dd41f51ecadd54685b48eb270fa640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  DeathEffect: {fileID: 0}
 --- !u!114 &114223143729375640
 MonoBehaviour:
   m_ObjectHideFlags: 1

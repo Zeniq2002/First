@@ -39,8 +39,9 @@ GameObject:
   - component: {fileID: 4517554302657314}
   - component: {fileID: 212013378908085586}
   - component: {fileID: 114038006777738276}
-  - component: {fileID: 60610539483426080}
+  - component: {fileID: 114588505315291880}
   - component: {fileID: 114677358289563160}
+  - component: {fileID: 60610539483426080}
   - component: {fileID: 50553521753545608}
   m_Layer: 0
   m_Name: EnemyRat
@@ -265,6 +266,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d016e5181ead7a2449c41fd7aaf707c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114588505315291880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1567498416794420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23dd41f51ecadd54685b48eb270fa640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  DeathEffect: {fileID: 0}
 --- !u!114 &114677358289563160
 MonoBehaviour:
   m_ObjectHideFlags: 1
