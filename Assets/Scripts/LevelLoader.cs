@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Hejsan : MonoBehaviour
+public class LevelLoader : MonoBehaviour
 {
     //Ger ett name till LoadScene (Namnet är scenen som ska loada)
-    public string levelToLoad = "Level2";
+    public string levelToLoad = "Level1";
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

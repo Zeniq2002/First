@@ -21,7 +21,7 @@ public class EnemyHorizontalMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //om man trycker på H flip Enemy Rat
+        //om man trycker på H flip Enemy
         if(Input.GetKeyDown(KeyCode.H))
         {
             Move(true);

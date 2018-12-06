@@ -13,6 +13,11 @@ public class ScoreTracker : MonoBehaviour
 
     private void Update()
     {
+        NewMethod();
+    }
+    //en score counter
+    private void NewMethod()
+    {
         scoreText.text = string.Format("Score: {0}", totalScore);
     }
 }

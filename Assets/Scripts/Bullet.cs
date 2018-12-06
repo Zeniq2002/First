@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
         //Ger en fart till bullet
         rb.velocity = transform.right * speed;
     }
-    //Om bullet colliderar destroy the bullet and do damage to enemy
+    //Om bullet colliderar destroy bullet och om den colliderar med enemy gör damage och destroy bullet
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         EnemyTakeDamage enemy = hitInfo.GetComponent<EnemyTakeDamage>();

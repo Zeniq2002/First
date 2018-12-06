@@ -17,7 +17,7 @@ public class EnemyTakeDamage : MonoBehaviour
             Die();
         }
     }
-    //Tar bort fienden från scenen
+    //Om den gör die Destroy game object
     void Die()
     {
         Destroy(gameObject);
